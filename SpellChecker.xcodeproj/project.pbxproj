@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3318A8192E060912008C749D /* CopyFiles */ = {
+		3318A8192E060912008C749D /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		3318A8BE2E08624A008C749D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = Debug;
+			dstSubfolderSpec = 16;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -22,9 +32,22 @@
 		3318A81B2E060912008C749D /* SpellChecker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpellChecker; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		3318A8C02E086272008C749D /* Exceptions for "SpellChecker" folder in "Copy Files" phase from "SpellChecker" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 3318A8BE2E08624A008C749D /* CopyFiles */;
+			membershipExceptions = (
+				dictionarywordsonly.json,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3318A81D2E060912008C749D /* SpellChecker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3318A8C02E086272008C749D /* Exceptions for "SpellChecker" folder in "Copy Files" phase from "SpellChecker" target */,
+			);
 			path = SpellChecker;
 			sourceTree = "<group>";
 		};
@@ -66,7 +89,9 @@
 			buildPhases = (
 				3318A8172E060912008C749D /* Sources */,
 				3318A8182E060912008C749D /* Frameworks */,
-				3318A8192E060912008C749D /* CopyFiles */,
+				3318A8192E060912008C749D /* Copy Files */,
+				3318A8482E06AA31008C749D /* Resources */,
+				3318A8BE2E08624A008C749D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -115,6 +140,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3318A8482E06AA31008C749D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3318A8172E060912008C749D /* Sources */ = {

@@ -6,6 +6,6 @@
 //
 
 protocol Search {
-    init (dictionary: [WordDictionary])
-    func Match(word: String) -> [String]
+    init (dictionary: WordDictionary) throws
+    func Match(input: String) async throws -> String?
 }
